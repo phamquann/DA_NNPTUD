@@ -91,7 +91,6 @@ order_id INT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE
 );
-
 -- 7. Tickets table
 CREATE TABLE tickets (
 id INT AUTO_INCREMENT PRIMARY KEY,
